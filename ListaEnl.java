@@ -79,7 +79,11 @@ class Lista{
         return longitud;
     }
     public void eliminarPrimero(){
-    
+        if(cabeza!=null){ 
+        Nodo primer = cabeza;
+        cabeza= cabeza.siguiente;
+        primer.siguiente = null;
+        longitud--;}
     }
     public void eliminarUltimo(){
         if(cabeza!=null){
