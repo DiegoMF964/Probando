@@ -85,20 +85,7 @@ class Lista{
         primer.siguiente = null;
         longitud--;}
     }
-    public void eliminarUltimo(){
-        if(cabeza!=null){
-            if(cabeza.siguiente==null){
-                cabeza=null;
-            }
-            else{ 
-            Nodo puntero = cabeza;
-            while (puntero.siguiente.siguiente==null) {
-                puntero=puntero.siguiente;
-            }
-            puntero.siguiente=null;
-            longitud--;
-        }}
-    }
+  
     public void eliminarLibro(int n){
         if(cabeza != null){
             if(n==0){
